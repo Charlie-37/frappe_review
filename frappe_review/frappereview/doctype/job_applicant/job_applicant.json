@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "autoname": "APLI.####",
+ "creation": "2022-11-22 12:29:42.634233",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fname",
+  "last_name",
+  "middle_name",
+  "full_name",
+  "mobile_number",
+  "job_role",
+  "app_past_company",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "fname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "permlevel": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "app_past_company",
+   "fieldtype": "Table",
+   "label": "Past Company Details",
+   "options": "ApplicantPastCompany"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Applicant",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_role",
+   "fieldtype": "Select",
+   "label": "Job Role",
+   "options": "Jr. Developer\nDeveloper\nSr. Developer\nManager",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-23 17:51:54.978859",
+ "modified_by": "Administrator",
+ "module": "FrappeReview",
+ "name": "Job Applicant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

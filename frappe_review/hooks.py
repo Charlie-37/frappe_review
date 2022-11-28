@@ -173,3 +173,13 @@ user_data_fields = [
 # 	"frappe_review.auth.validate"
 # ]
 
+# //*Direct full doctype with value
+fixtures = ['Job Applicant',
+
+# //* Another fixture with field filtering
+{
+	'dt' : 'StudentDetail',
+	'filters' : [['first_name' ,'like',('%i')]]
+}
+]
+
